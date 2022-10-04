@@ -68,7 +68,7 @@ header {
 }
 
 .contact-nav a {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -150,13 +150,16 @@ header {
 
 .features {
 }
+.title-portfolio {
+  color: var(--title-text-color);
+}
 
 .features .title {
   color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -268,6 +271,16 @@ address {
 .contact-nav-secondary {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.contact-nav-secondary:hover,
+.contact-nav-secondary:focus {
+  color: var(--accent-text-color);
+}
+
+.link-maps:hover,
+.link-maps:focus {
+  color: var(--accent-text-color);
 }
 
 /* Портфолио */
