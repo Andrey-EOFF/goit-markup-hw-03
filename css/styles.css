@@ -67,6 +67,8 @@ ul {
   width: 1170px;
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Header nav+cont. */
@@ -87,6 +89,16 @@ ul {
   color: var(--accent-text-color);
 }
 
+.site-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .site-nav a {
   color: var(--title-text-color);
 
@@ -95,12 +107,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
 }
 
-.contact-nav {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .contact-nav a {
   color: var(--primary-text-color);
 
@@ -109,6 +118,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
 }
 
 .site-nav .link:hover,
