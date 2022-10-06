@@ -27,9 +27,9 @@
   --button-bg-active: #188CE8;
 }
 
-html {
+/* html {
   box-sizing: border-box;
-}
+} */
 *,
 *::before,
 *::after {
@@ -39,6 +39,8 @@ html {
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  align-content: center;
+  width: 1600px;
 
   font-family: 'Roboto', sans-serif;
   
@@ -74,25 +76,26 @@ ul {
 
 .container-header {
 
-  margin-left: auto;
-  margin-right: auto;
-  width: 1230px;
+  width: 1170px;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 15px;
   padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1230px;
+
+  width: 1170px;
   padding-top: 94px;
   padding-bottom: 94px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Header nav+cont. */
@@ -120,6 +123,8 @@ ul {
 .site-nav {
   display: flex;
   margin-left: 93px;
+  padding-left: 0;
+  padding-right: 0;
 
   margin-top: 0;
   margin-bottom: 0;
@@ -193,6 +198,7 @@ ul {
   background-color: var(--accent-bg-color);
   text-align: center;
   margin-bottom: 0;
+  width: 1600px;
 }
 
 .hero-title {
@@ -269,14 +275,13 @@ ul {
 
 /* Особливості (ЗАГОЛОВОК h2 прибрати в CSS) */
 
-/* .block-list */
-
 
 .features {
   width: 1600px;
 }
 .features-list {
   display: flex;
+  padding-inline-start: 0; 
 }
 
 .features-list .item + .item {
@@ -324,6 +329,8 @@ ul {
 
 .img-list {
   display: flex;
+  padding-left: 0;
+  padding-right: 0;
 
   padding-top: 0;
   padding-bottom: 0;
@@ -341,7 +348,7 @@ ul {
 .list-works {
   padding-top: 0;
   padding-bottom: 0;
-  width: 1230px;
+  width: 1600px;
   align-items: center;
 }
 
@@ -361,8 +368,23 @@ ul {
 
 /* наша команда */
 
+.team {
+  width: 1600px;
+  margin-inline-end: 0;
+
+}
+
 .team-list {
   display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  margin-inline-end: 0;
+
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
 
 .team-list .item{
@@ -376,8 +398,7 @@ ul {
 .team {
   background-color: var(--secondary-bg-color);
     padding-top: 0;
-  padding-bottom: 0;
-  width: 1600px;
+    padding-bottom: 0;
 }
 
 .team .title {
@@ -422,16 +443,26 @@ ul {
 
 footer {
   background-color: var(--accent-bg-color);
+  width: 1600px;
+
+}
+
+.block-footer .item {
+ 
+  
 }
 
 
 .container-footer {
-
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+
+  width: 1170px;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 .logo-secondary {
@@ -444,6 +475,10 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  display: block;
+  margin-bottom: 20px;
+
 }
 
 
@@ -463,6 +498,7 @@ address {
 .link-maps {
   color: var(--base-white-color);
   text-decoration: none;
+
 }
 
 .contact-nav-secondary {
@@ -478,7 +514,26 @@ address {
 .link-maps:hover,
 .link-maps:focus {
   color: var(--accent-text-color);
+  
 }
+
+.block-footer {
+ padding-left: 0;
+ padding-right: 0;
+}
+
+.item .link-maps {
+display: block;
+margin-bottom: 9px;
+}
+.item .mail {
+display: block;
+margin-bottom: 9px;
+}
+.item .tell {
+display: block;
+}
+
 
 /* Портфолио */
 
@@ -534,3 +589,21 @@ address {
 .link-filter {
     text-decoration: none;
 }
+
+/* .main-header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  
+}
+
+.container-header {
+
+  width: 1170px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 15px;
+  padding-left: 15px; */
+
