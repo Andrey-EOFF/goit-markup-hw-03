@@ -451,10 +451,6 @@ footer {
 
 }
 
-.block-footer .item {
- 
-  
-}
 
 
 .container-footer {
@@ -591,9 +587,6 @@ display: block;
   margin-right: 30px;
   margin-bottom: 30px;
 
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: blue; */
 }
 
 .box {
@@ -614,7 +607,6 @@ display: block;
   border-left-color: #EEEEEE;
 }
 
-/* #EEEEEE  РАМКА*/ 
 
 .list-choice:nth-child(3n) {
   margin-right: 0;
