@@ -20,7 +20,7 @@
     <!--Header nav + cont.-->
 
     <header class="page-header">
-      <div class="container-header main-header">
+      <div class="container main-header">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
         <nav>
           <ul class="site-nav">
@@ -51,13 +51,15 @@
       <!--Герой банер с заголовком-->
 
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button-primary">Замовити послугу</button>
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button-primary">Замовити послугу</button>
+        </div>
       </section>
 
       <!--Особливості (ЗАГОЛОВОК h2 прибрати в CSS)-->
 
-      <section class="features">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
 
@@ -92,9 +94,9 @@
 
       <!--Чим ми займаємось-->
 
-      <section class="list-works">
+      <section class="section works">
         <div class="container">
-          <h2 class="title">Чим ми займаємося</h2>
+          <h2 class="works-title">Чим ми займаємося</h2>
 
           <ul class="img-list">
             <li class="item">
@@ -110,48 +112,41 @@
 
       <!--Наша команда-->
 
-      <section class="team">
+      <section class="section team">
         <div class="container">
-          <h2 class="title">Наша команда</h2>
+          <h2 class="team-title">Наша команда</h2>
 
           <ul class="team-list">
             <li class="item">
               <img class="foto-users" src="./images/1.jpg" width="270" alt="чоловік в окулярах" />
-              <h3 class="title-users">Ігор Дем'яненко</h3>
-              <p class="text">Product Designer</p>
+              <div class="team-description">
+                <h3 class="users-title">Ігор Дем'яненко</h3>
+                <p class="text">Product Designer</p>
+              </div>
             </li>
 
             <li class="item">
-              <img
-                class="foto-users"
-                src="./images/2.jpg"
-                width="270"
-                alt="дівчина в окулярах та піджаку"
-              />
-              <h3 class="title-users">Ольга Рєпіна</h3>
-              <p class="text">Frontend Developer</p>
+              <img class="foto-users" src="./images/2.jpg" width="270" alt="дівчина в окулярах" />
+              <div class="team-description">
+                <h3 class="users-title">Ольга Рєпіна</h3>
+                <p class="text">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="item">
-              <img
-                class="foto-users"
-                src="./images/3.jpg"
-                width="270"
-                alt="чоловік в світлій сорочці"
-              />
-              <h3 class="title-users">Микола Тарасов</h3>
-              <p class="text">Marketing</p>
+              <img class="foto-users" src="./images/3.jpg" width="270" alt="чоловік в сорочці" />
+              <div class="team-description">
+                <h3 class="users-title">Микола Тарасов</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
 
             <li class="item">
-              <img
-                class="foto-users"
-                src="./images/4.jpg"
-                width="270"
-                alt="чоловік в футболці з бородою"
-              />
-              <h3 class="title-users">Михайло Єрмаков</h3>
-              <p class="text">UI Designer</p>
+              <img class="foto-users" src="./images/4.jpg" width="270" alt="чоловік з бородою" />
+              <div class="team-description">
+                <h3 class="users-title">Михайло Єрмаков</h3>
+                <p class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -160,8 +155,8 @@
 
     <!--Підвал-->
 
-    <footer>
-      <div class="container-footer">
+    <footer class="footer">
+      <div class="container">
         <a href="./index.html" class="logo-secondary"><span>Web</span>Studio</a>
 
         <address>

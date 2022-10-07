@@ -27,9 +27,10 @@
   --button-bg-active: #188CE8;
 }
 
-/* html {
+html {
   box-sizing: border-box;
-} */
+}
+
 *,
 *::before,
 *::after {
@@ -39,30 +40,26 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
-  align-content: center;
-  width: 1600px;
-
   font-family: 'Roboto', sans-serif;
-  
 }
 
 ul {
   list-style: none;
 }
 
-/* Убираем заголовки на странице */
+/* Убираем заголовки на странице /////////////////////*/
 
 .visually-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* Page Header */
@@ -75,14 +72,14 @@ ul {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ECECEC;
-  
 }
 
-.container-header {
+/* CONTAINER UNIVERSAL //////////////////////////////////*/
 
-  width: 1170px;
-  margin-top: 0;
-  margin-bottom: 0;
+.container {
+
+  width: 1200px;
+
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 15px;
@@ -91,23 +88,18 @@ ul {
   margin-right: auto;
 }
 
-.container {
+/* SECTION UNIVERSAL ///////////////////////////*/
 
-  width: 1170px;
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* Header nav+cont. */
+
+/* Header nav+cont. ////////////////////////////////////*/
 
 .logo {
-     display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: block;
 
   color: var(--logo-black-color);
 
@@ -132,15 +124,13 @@ ul {
 
   margin-top: 0;
   margin-bottom: 0;
-  
 }
 
-
-.site-nav .item + .item {
+.site-nav .item+.item {
   margin-left: 50px;
 }
 
-.site-nav .link, 
+.site-nav .link,
 .link-current {
   display: block;
   padding-top: 32px;
@@ -148,16 +138,19 @@ ul {
 }
 
 .contact-nav {
-   display: flex;
-   margin-left: auto;
-
-  margin-top: 0;
-  margin-bottom: 0;
-  
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
 }
 
-.contact-nav .item + .item {
+.contact-nav .item+.item {
   margin-left: 50px;
+}
+
+.contact-nav .item {
+  margin: 0 auto;
 }
 
 .site-nav a {
@@ -168,7 +161,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
 }
 
 .contact-nav a {
@@ -179,7 +171,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
 }
 
 .site-nav .link:hover,
@@ -196,13 +187,12 @@ ul {
   color: var(--accent-text-color);
 }
 
-/* Герой банер с заголовком */
+/* Герой банер с заголовком ///////////////////////// */
 
 .hero {
   background-color: var(--accent-bg-color);
-  text-align: center;
-  margin-bottom: 0;
-  width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -219,10 +209,10 @@ ul {
   margin-bottom: 30px;
 }
 
-/* Button */
+/* Button ///////////////////////////////////////*/
 
 .button-primary {
-    cursor: pointer;
+  cursor: pointer;
 
   color: var(--base-white-color);
   background-color: var(--accent-secondary-bg-color);
@@ -238,15 +228,12 @@ ul {
 
   border-radius: 4px;
   padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   border: none;
-
-
 }
 
 .button-secondary {
-    cursor: pointer;
+  cursor: pointer;
 
   color: var(--title-text-color);
   background: var(--secondary-bg-color);
@@ -262,8 +249,6 @@ ul {
   padding: 6px 22px;
   max-width: 130px;
   border: none;
-  
-
 }
 
 .button-primary:hover,
@@ -277,23 +262,18 @@ ul {
   background-color: var(--accent-secondary-bg-color);
 }
 
-/* Особливості (ЗАГОЛОВОК h2 прибрати в CSS) */
 
 
-.features {
-  width: 1600px;
-}
+/* Особливості (ЗАГОЛОВОК h2 прибрати в CSS) /////////////*/
+
 .features-list {
   display: flex;
-  padding-inline-start: 0; 
+  padding-inline-start: 0;
+  margin: 0 auto;
 }
 
-.features-list .item + .item {
+.features-list .item+.item {
   margin-left: 30px;
-}
-
-.features-list .item {
-  width: 270px;
 }
 
 .block {
@@ -301,12 +281,14 @@ ul {
   margin-bottom: 0;
 }
 
-
+/* WHAT IS IT ??????????????????????????????????????????? */
 .title-portfolio {
   color: var(--title-text-color);
 }
 
-.features .title {
+
+
+.features-list .title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -314,7 +296,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: start;
 
+  padding: 0;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -329,34 +313,37 @@ ul {
   margin-bottom: 0;
 }
 
-/* чим ми займаємось */
+/* чим ми займаємось /////////////////////////////////////*/
+
+.section.works {
+  padding-top: 0;
+}
 
 .img-list {
   display: flex;
-  padding-left: 0;
-  padding-right: 0;
 
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-.img-list .item{
+
+.img-list .item {
   width: 370px;
 }
 
-.img-list .item + .item {
+.img-list .item+.item {
   margin-left: 30px;
 }
 
-.list-works {
+/* DELETE ??????????????? ????????????????????????????*/
+/* .list-works {
   padding-top: 0;
   padding-bottom: 0;
   width: 1600px;
   align-items: center;
-}
+} */
 
-.list-works .title {
+.works-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -367,45 +354,52 @@ ul {
 
   margin-top: 0;
   margin-bottom: 50px;
-  
-}
-
-/* наша команда */
-
-.team {
-  width: 1600px;
-  margin-inline-end: 0;
 
 }
+
+/* наша команда //////////////////////////////////////////*/
 
 .team-list {
   display: flex;
-  padding-left: 0;
-  padding-right: 0;
-  margin-inline-end: 0;
 
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
-.team-list .item{
-  width: 370px;
+.team-list .item {
+  background-color: var(--base-white-bg-color);
 }
 
-.team-list .item + .item {
+.team-list .item+.item {
   margin-left: 30px;
 }
 
 .team {
   background-color: var(--secondary-bg-color);
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
-.team .title {
+.team-description {
+
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #EEEEEE;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #EEEEEE;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #EEEEEE;
+
+
+}
+
+.team-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -418,7 +412,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.team .title-users {
+.users-title {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -428,7 +422,6 @@ ul {
 
   margin-top: 0;
   margin-bottom: 10px;
-
 }
 
 .team .text {
@@ -437,31 +430,17 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
+
 .foto-users {
-  margin-top: 0;
-  margin-bottom: 30px;
+  display: block;
 }
 
+/* Подвал  ///////////////////////////////////*/
 
-/* Подвал  */
-
-footer {
+.footer {
   background-color: var(--accent-bg-color);
-  width: 1600px;
-
-}
-
-
-
-.container-footer {
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 1170px;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 
 }
 
@@ -493,7 +472,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
- 
+
 
 .link-maps {
   color: var(--base-white-color);
@@ -506,45 +485,31 @@ address {
   text-decoration: none;
 }
 
-.contact-nav-secondary:hover,
-.contact-nav-secondary:focus {
+.block-footer .item :hover,
+.block-footer .item :focus {
   color: var(--accent-text-color);
 }
 
 .link-maps:hover,
 .link-maps:focus {
   color: var(--accent-text-color);
-  
+
 }
 
 .block-footer {
- padding-left: 0;
- padding-right: 0;
+  display: block;
+
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
 }
 
-.item .link-maps {
-display: block;
-margin-bottom: 9px;
-}
-.item .mail {
-display: block;
-margin-bottom: 9px;
-}
-.item .tell {
-display: block;
+.block-footer .item:nth-child(-n + 2) {
+  margin-bottom: 9px;
 }
 
 
-/* Портфолио сторінка друга */
-
-
-.page-header{
-  margin-top: 0;
-  margin-bottom: 0;
-  padding top: 0;
-  padding bottom: 0;
-
-}
+/* Портфолио сторінка друга 000000000000000000000000*/
 
 
 
@@ -554,22 +519,18 @@ display: block;
 
   margin-top: 0;
   margin-bottom: 34px;
-  padding-right: 0;
-  padding-left: 0;
-  
+  padding: 0;
 }
 
-.list-button .item + .item {
+.list-button .item+.item {
   margin-left: 8px;
 }
 
 .list-filter {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 0;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -580,9 +541,7 @@ display: block;
   margin-bottom: 0;
 }
 
-
-
-.list-choice{
+.list-choice {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -590,27 +549,27 @@ display: block;
 }
 
 .box {
-padding-left: 24px;
-display: block;
- border-right-width: 1px;
+
+  padding: 20px 24px;
+  display: block;
+
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #EEEEEE;
 
-  /* Встановить стилі нижньої рамки */
   border-bottom-width: 1px;
-  border-bottom-style:  solid;
+  border-bottom-style: solid;
   border-bottom-color: #EEEEEE;
 
-  /* Встановить стилі лівої рамки */
   border-left-width: 1px;
-  border-left-style:  solid;
+  border-left-style: solid;
   border-left-color: #EEEEEE;
 }
 
 
 .list-choice:nth-child(3n) {
   margin-right: 0;
-   
+
 }
 
 .list-choice:nth-last-child(-n+3) {
@@ -627,7 +586,7 @@ display: block;
   letter-spacing: 0.06em;
 
   margin-bottom: 4px;
-  padding-top: 20px;
+  padding: 0;
 }
 
 .list-filter .text {
@@ -639,12 +598,10 @@ display: block;
 }
 
 .link-filter {
-    text-decoration: none;
+  text-decoration: none;
 
 }
 
 .link-filter img {
   display: block;
 }
-
-
