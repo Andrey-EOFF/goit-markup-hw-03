@@ -384,7 +384,7 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
 
-  border-right-width: 1px;
+  /* border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #EEEEEE;
 
@@ -394,8 +394,7 @@ ul {
 
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #EEEEEE;
-
+  border-left-color: #EEEEEE; */
 
 }
 
